@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow with comfy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+        }
+
+        #sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #f8f9fa;
+            padding-top: 56px;
+        }
+
+        #content {
+            margin-left: 250px;
+            width: calc(100% - 250px);
+        }
+
+        .navbar {
+            position: fixed;
+            width: calc(100% - 250px);
+            z-index: 1000;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3">
+        <a class="container" href="#">
+            <img src="logo.png" alt="Logo" height="70">
+        </a>
+
+        <ul class="nav nav-pills flex-column mb-auto"><br><br>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link link-dark ">Home</a>
+            </li>
+            <li>
+                <a href="explore.html" class="nav-link active">Explore</a>
+            </li>
+            <li>
+                <a href="featured.html" class="nav-link link-dark">Featured</a>
+            </li>
+            <li>
+                <a href="trending.html" class="nav-link link-dark">Trending</a>
+            </li>
+            <li>
+                <a href="creators.html" class="nav-link link-dark">Creators</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="btn btn-primary me-2">Upload Workflow</button>
+
+                <form class="d-flex mx-auto" style="width: 50%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div>
+                    <button class="btn btn-primary me-2">Get in Touch</button>
+                    <button class="btn btn-outline-primary">Sign In</button>
+                </div>
+            </div>
+        </nav><br><br><br>
+
+        <div class="text-center">
+            <h2>Workflows
+</h2>
+            <p>Workflows that are meant for a specific task. ex: upscaling, color restoration, generating images with 2 characters,
+            etc.</p>
+        </div>
+
+        <div class="container mt-5 pt-5">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Repeat this card 20 times -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/3f814e91-ee9f-4632-b655-ec17d66d3497/assets/workflow-instant-id%20works%20with%20SDXL_00039_.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Roman Greek Bust Statue using InstantID Face - SDXL workflow
+                            </h5>
+                            <p class="card-text">Washington Wizards Kyle Kuzma as a greek head bust statue</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/4478df63-1ab0-45f8-9666-66e5b156ed4e/assets/Kosinkadink_00001.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Kosinkadink Text to video with Animatediff - how do i get rid of 2nd
+                                person
+
+                            </h5>
+                            <p class="card-text">Kosinkadink Text to video with Animatediff - how do i get rid of 2nd
+                                person</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/e59ea985-07c4-47cd-8f0d-c3eda9a85b5d/assets/clay%20spike%20instant%20faceid%20sdxl_00002.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Clay FaceId IpAdapter Animatediff - the Image changes every frame WHY
+                            </h5>
+                            <p class="card-text">Clay FaceId IpAdapter Animatediff - the Image changes every frame WHY
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/9173a273-e2c1-456e-83c7-985113195bf2/assets/Kosinkadink_00039.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">IPadapter Animatediff Clay weird morphing 001
+
+                            </h5>
+                            <p class="card-text">IPadapter Animatediff Clay weird morphing 001</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/03d80795-cb92-4f56-99eb-9a42d6e22b23/assets/FaceDetailer_00005_.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Tenofas v3.2 - FLUX with img2img and LLM generated prompt, LoRA's,
+                                Face detailer and Ultimate SD Upscaler
+
+
+                            </h5>
+                            <p class="card-text">You have txt2img, img2img and LLM model prompts (the LLM need an API
+                                key from Groq or from OpenAI - read the guide to
+                                save the API key in the workflow).</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/89ee54f7-a9cc-4739-a47f-ebac7b2bf823/assets/sweetValberry%20pulid%20face%20-%20Tvondre%20Sweat%20to%20thanos.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Automotive Design Copilot Flux workflow (controlnet+Lora)
+                            </h5>
+                            <p class="card-text">This is a car design workflow based on Flux.1, with updated Controlnet
+                                and Lora</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/c5b156f7-648c-4746-95fa-7dcd491b0ccb/assets/Goshnii%20Ai%20Thanos%20Test%20upscale%20001.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                sweetValberry pulid face - Tvondre Sweat to thanos
+
+                            </h5>
+                            <p class="card-text">make sure to load a picture of thanos in the style reference image box
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://public-assets.comfyworkflows.com/optimized_comfy_workflows_user_uploads/f92422a3-0298-48bf-bb6a-ef0ee6aa6f8f/assets/sweetvalberry%20best%20clay%20effects%20-%20spike%20002b.webp"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">thanos cartoon goshnii AI workflow
+
+                            </h5>
+                            <p class="card-text">thanos cartoon goshnii AI workflow.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

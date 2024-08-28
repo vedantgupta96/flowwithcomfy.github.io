@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow with comfy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+        }
+
+        #sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #f8f9fa;
+            padding-top: 56px;
+        }
+
+        #content {
+            margin-left: 250px;
+            width: calc(100% - 250px);
+        }
+
+        .navbar {
+            position: fixed;
+            width: calc(100% - 250px);
+            z-index: 1000;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3">
+        <a class="container" href="#">
+            <img src="logo.png" alt="Logo" height="70">
+        </a>
+
+        <ul class="nav nav-pills flex-column mb-auto"><br><br>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link link-dark">Home</a>
+            </li>
+            <li>
+                <a href="explore.html" class="nav-link link-dark">Explore</a>
+            </li>
+            <li>
+                <a href="featured.html" class="nav-link link-dark">Featured</a>
+            </li>
+            <li>
+                <a href="trending.html" class="nav-link link-dark">Trending</a>
+            </li>
+            <li>
+                <a href="creators.html" class="nav-link active">Creators</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="btn btn-primary me-2">Upload Workflow</button>
+
+                <form class="d-flex mx-auto" style="width: 50%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div>
+                    <button class="btn btn-primary me-2">Get in Touch</button>
+                    <button class="btn btn-outline-primary">Sign In</button>
+                </div>
+            </div>
+        </nav><br><br><br>
+
+        <div class="text-center">
+            <h2>Follow Creators you love</h2>
+            <p>Here you'll find the most loved cretaors on our platform  </p>
+        </div>
+
+        <div class="container mt-5 pt-5">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Repeat this card 20 times -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="man.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Pulak Mehta
+                            </h5>
+                            <p class="card-text">PS creator</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="women.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Amanda Singh
+
+                            </h5>
+                            <p class="card-text">Animator</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="man.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Devansh Alok
+                            </h5>
+                            <p class="card-text"> Giggle Creator
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="man.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Vedant Gupta
+
+                            </h5>
+                            <p class="card-text">Sports Creator</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="women.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title"> Nancy Richardson
+
+
+                            </h5>
+                            <p class="card-text">Image Creator.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="man.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Finnsh Joint 
+                            </h5>
+                            <p class="card-text">Hilton Points</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="women.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Lora Lora
+
+                            </h5>
+                            <p class="card-text"> Kindness creator
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="man.jpg"
+                            class="card-img-top" alt="Workflow Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Peter Yolo
+
+                            </h5>
+                            <p class="card-text">Git Creator</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary me-2">Follow Creator</button>
+                            <button class="btn btn-sm btn-success">Donate</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
